@@ -30,7 +30,9 @@ Utilizando o método POST e o endereço [/api/user/register](/api/user/register)
 }
 ```
 #### Lista de Horas trabalhadas de um usuário
-Utilizando o método GET e o endereço [/api/hour/list/{id}](/api/hour/list/{id}), a API retornará as horas totais trabalhadas, os minutos totais trabalhados e uma lista com todos os horários do usuário a partir do parâmetro {id} (tudo em formato **JSON**).
+Utilizando o método GET e o endereço [/api/hour/list/{id}](/api/hour/list/{id}), a API retornará as horas totais trabalhadas, os minutos totais trabalhados e uma lista com todos os horários do usuário a partir do parâmetro {id} (tudo em formato **JSON**). 
+
+> Caso o usuário utilize a API como um sistema de ponto, o cálculo de horas e minutos totais não levará em consideração os registros que não possuem horário de fim.
 
 #### Registro de Horas
 Utilizando o método POST e o endereço [/api/hour/register](/api/hour/register), submeta o horário com no mínimo 2 campos, como mostra a seguir:
